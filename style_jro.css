@@ -1,0 +1,677 @@
+* {
+    box-sizing: border-box;
+}
+
+/* For phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-0_5 {width: 4.165%}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14pt;
+	margin: 0;
+}
+
+a {
+	color: inherit
+}
+
+    a:hover {
+	   text-decoration: none;
+    }
+
+/* Header */
+
+header {
+    background-color: #a3a3a3;
+}
+	
+header a {
+    text-decoration: none;
+}
+
+	header nav {
+        margin: 0px auto;
+        text-align: center;
+    }
+	
+		header nav ul {
+            font-family: 'Marcellus SC', serif;
+			list-style-type: none;
+			margin: 0 auto; padding: 0;
+            position: relative;
+            left: 10%;
+            text-align: left;
+		}
+		
+			header nav ul li {
+				margin: auto; border: 0; padding: 10px;
+                transition: .15s;
+			}
+            
+            header nav ul li:hover {
+                color: white;
+                transform: scale(1.15);
+            }
+
+                header nav ul li i {
+                    color: #bb0000;
+                }
+
+                header nav ul li a {
+                    text-decoration: none;
+                    font-size: 19.5pt;
+                    line-height: 1.75;
+                }
+
+header nav a img {
+    width: 100%;
+}
+
+header nav a h1 {
+    font-family: 'Marcellus SC', serif;
+    text-decoration: none;
+}
+
+header nav a h1::first-letter {
+    font-size:30pt;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        background: #a3a3a3;
+        -moz-border-radius:5px;
+    	-webkit-border-radius:5px;
+    	border-radius:5px;
+        font-size: 150%;
+        padding: 10px;
+        border: none;
+        position: fixed;
+        right: 2%;
+        top: 2%
+    }
+    
+        .hamburger:hover {
+            cursor: pointer;
+        }
+    
+    .options {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #a3a3a3;
+    }
+        header nav ul li::before {
+            content: "____";
+            color: #a3a3a3;
+        }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+		position: fixed;
+		height: 100%;
+		top: 0;
+    }
+    
+    #spacer {
+        display: block
+    }
+    
+    .options {
+        display: block;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+}
+
+
+/* Content */
+
+#content {
+    padding: 0;
+}
+
+.main-section {
+    overflow: hidden;
+    margin: 0 auto; padding: 0;
+    
+    background-color: white;
+}
+
+.everyother_1 {
+	background: #efefef;
+	padding: 5px 30px;
+	border-right: 3px solid #bb0000;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 10px 1px #dfdfdf;
+}
+
+.everyother_2 {
+	background: #fff;
+	padding: 5px 30px;
+	border-right: 3px solid #bb0000;
+	box-shadow: 0px 0px 10px 1px #e2e2e2;
+}
+
+.title {
+    font-family: 'Marcellus SC', serif;
+	width: 100%;
+    margin: 0 auto; padding: auto;
+    text-align: center;
+	overflow: hidden;
+	background: -webkit--gradient(left top, #efefef, #fff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #efefef, #fff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #efefef, #fff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #d3d3d3, #efefef); /* Standard syntax */
+	box-shadow: 0px 0px 10px 1px #e2e2e2;
+    z-index: 10;
+}
+
+.words {
+    margin: auto;
+    padding: 25px;
+    width: 80%;
+}
+
+/* Home */
+
+.intro-container {
+    padding: 30px;
+    #background-color: #efefef;
+}
+
+.intro-container h1, h2, h3, h4, h5 {
+    font-family: 'Marcellus SC', serif;
+}
+
+.intro-photo img {
+	border: 8px solid #a3a3a3;
+	margin: 0 auto;
+	width: 100%
+}
+
+	.image {
+		opacity: 1;
+		transition: 0.5s ease;
+		backface-visibility: hidden;
+	}
+
+.intro-photo-text {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: relative;
+	left: 35%;
+    font-family: 'Marcellus SC', serif;
+}
+
+.intro-photo:hover .image {
+	opacity: 0.5;
+}
+
+.intro-photo:hover .intro-photo-text {
+	opacity: 1;
+}
+
+/* Cards */ 
+
+.intro-card-container {
+	display: -webkit-flex;
+    display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+    -webkit-flex-direction: row;
+	flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-image: url("white_wall_hash.png");
+    background-repeat: repeat;
+    background-color: white;
+}
+
+.card {
+	box-sizing: border-box;
+	width: 480px;
+	height: 170px;
+	overflow: hidden;
+	font-size: 13pt;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+	.card-title {
+		font-size: 12pt;
+		font-style: italic;
+        font-family: 'Marcellus SC', serif;
+		color: #666;
+	}
+
+/* Slide Show */
+
+.mySlides {
+	display:none
+}
+
+.slideshow-container {
+	position: relative;
+	margin: auto;
+}
+
+	/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+/* Quote */
+
+.wayne {
+	margin-top: 0;
+	padding-top: 0;
+	margin-left: 270px;
+}
+
+/* About */
+
+#about {
+
+}
+
+/* Profile */
+
+#snapshot-container {
+    background-image: url("white_wall_hash.png");
+    background-repeat: repeat;
+    #background: white;
+    padding: 25px 30px;
+}
+
+.profile-container {
+	display: -webkit-flex;
+    display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding: 13px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .profile-container {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+}
+
+.profile-title {
+	margin: 0px;
+	padding: 0 0 0 15px;
+	width: 100%;
+	-webkit-flex: 2;
+	flex: 2;
+}
+
+.profile-photo {
+	-webkit-flex: 1;
+	flex: 1;
+    margin: 0px 20px;
+}
+
+	.profile-photo img {
+		width: 100%;
+		border-radius: 50%;
+		border: 0px solid;
+		
+	}
+
+.profile-info {
+	-webkit-flex: 2;
+	flex: 2;
+}
+
+.profile_title {
+	padding: 3px 0px;
+	margin: 0px;
+	font-weight: bold;
+    font-family: 'Marcellus SC', serif;
+}
+
+.profile_info {
+	padding: 3px 0px;
+	margin: 0px;
+}
+
+/* Work */
+
+#work-content h3, h4, h5 {
+    margin: 0; padding: 5px 0px;
+}
+
+#work-content p {
+    margin: 0; padding: 8px 0px;
+}
+
+/* Projects */
+
+#projects {
+    background: white;
+}
+
+#projects-card-container {
+    display: -webkit-flex;
+    display: flex;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+    -webkit-flex-direction: row;
+	flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    background-image: url("white_wall_hash.png");
+    background-repeat: repeat;
+    background-color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .projects-card {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .projects-card {
+        width: 28%;
+    }
+}
+
+.projects-card {
+	overflow: hidden;
+    margin: 20px 0px
+}
+
+    .projects-card h3 {
+        margin: 0; padding: 15px 0px 2.5px 0px;
+    }
+
+    .projects-card h4, h5 {
+        margin: 0; padding: 5px 0px;
+    }
+
+    .projects-card p {
+        margin: 0; padding: 8px 0px 15px 0px;
+    }
+
+/* Resume */
+
+#resume-intro button {
+	color: inherit;
+	background-color: inherit;
+	text-decoration: underline;
+	outline: none;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+	#resume-intro button:hover {
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+#resume-link {
+    background: #efefef;
+	margin-top: 20px auto;
+}
+
+#resume-link button {
+	font-family: 'Marcellus SC', serif;
+	font-size: 18pt;
+	height: 80px;
+	margin: 20px;
+	padding: 8px 20px;
+	background: #b7b7b7;
+	background: -webkit-linear-gradient(bottom, #b7b7b7, #dfdfdf); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top, #b7b7b7, #dfdfdf); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top, #b7b7b7, #dfdfdf); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top, #b7b7b7, #dfdfdf);
+	transition: 0.14s;
+	border: 2px solid #999999;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+	#resume-link button:hover {
+		transform: scale(1.08);
+		cursor: pointer;
+		border: 2px solid #bb0000;
+		-moz-border-radius:5px;
+    	-webkit-border-radius:5px;
+    	border-radius:5px;
+	}
+
+	#resume-link button:active {
+		transform: scale(1.03);
+		cursor: pointer;
+		background: #bb0000;
+		border: 2px solid #bb0000;
+		-moz-border-radius:5px;
+    	-webkit-border-radius:5px;
+    	border-radius:5px;
+	}
+
+/* Albert Quote */
+
+#albert-quote-container {
+    background-image: url("white_wall_hash.png");
+    background-repeat: repeat;
+    padding: 25px 30px;
+}
+
+#albert-quote {
+    margin: auto;
+    width: 90%;
+}
+
+/* Contact */
+
+#contact {
+    background-color: #efefef;
+}
+
+#contact-info {
+	list-style: none;
+	display: ;
+	padding: 10px;
+	margin: auto;
+}
+
+    #contact-info p {
+    margin: 0; padding: 15px;
+    }
+
+.contact-list {
+	margin: 0px;
+	padding: 5px 0px;
+}
+
+    .contact-list p {
+        margin: 0; padding: 10px;
+    }
+
+    .contact-list a {
+		text-decoration: none;
+	}
+
+	.contact-list a:hover {
+		opacity: 0.6;
+	}
+
+	.contact-list i {
+		padding: 0px 6px;
+		color: #bb0000;
+	}
+
+#contact-form {
+    background-color: white;
+	padding: 20px;
+	margin: auto;
+}
+
+	label {
+		padding: 6px 0px;
+	}
+
+	input, textarea {
+		width: 100%;
+		height: 27px;
+		background: #d3d3d3;
+		border: 1px solid #3a3a3a;
+		padding: 10px;
+		margin-top: 3px;
+		color: #3a3a3a;
+		-moz-border-radius:5px;
+    	-webkit-border-radius:5px;
+    	border-radius:5px;
+        transition: 0.1s;
+	}
+
+		input:focus, textarea:focus {
+ 			border: 2.5px solid #bb0000;
+		}
+
+	textarea {
+		height: 213px;
+	}
+
+	#submit {
+		width: 127px;
+		height: 38px;
+		background: #a9a9a9;
+		border: none;
+		margin-top: 20px;
+		cursor: pointer;
+        font-family: 'Marcellus SC', serif;
+        font-size: 13pt;
+        text-align: center;
+	}
+
+		#submit:hover {
+			opacity: 0.8;
+		}
+
+label {
+    font-family: 'Marcellus SC', serif;
+	display: block;
+}
+
+/* submit button message */
+
+/* The Modal (background) */
+.sorry-message {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 300px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.sorry-message-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#submitbtn {
+    background: inherit;
+    border: none;
+}
