@@ -28,7 +28,7 @@ function showSlides() {
 	
 	dots[slideIndex-1].className += " active";
 	
-	setTimeout(showSlides, 11000);
+	setTimeout(showSlides, 6000);
 }
 
 // This is for the "submit" button that doesnt work

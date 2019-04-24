@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jacob Oliveira</title>
+	<link rel="shortcut icon" href="favicon-32x32.ico"/>
+	<link href="style.css" rel="stylesheet">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+        // Prevent default anchor click behavior
+            event.preventDefault();
+
+        // Store hash
+            var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+
+<body>
+	
+<div class="row">
+    <header class="col-12">
+        <div id="spacer" class="col-1"></div>
+        <div id="headcontent" class="col-10">
+            <a class="col-6" href="#home"><h1>JACOB</h1> <h1>OLIVEIRA</h1></a>
+            <img src="Photos/osuengineering.PNG" class="col-4">
+        </div>
+        <div id="spacer" class="col-1"></div>
+    </header>
+</div>
+
+<div class="row">
+        <section id="work" class="main-section col-12">
+            <div class="title">
+                <ul>
+                    <li><a href="./index.html"> About</a></li> <li> |</li>
+                    <li><a href="./Academic%20Qualifications.html"> Academics</a></li> <li> |</li>
+                    <li><a href="./Internship%20Experience.html"  id="active"> Internships</a></li> <li> |</li>
+                    <li><a href="./Projects.html"> Projects</a></li> <li> |</li>
+                    <li><a href="./Activities%20and%20Work.html"> Activities and Work</a></li> <li> |</li>
+                    <li><a href="./Contact%20Me.html"> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div id="work-content" class="words">
+				<p>Department of Public Works: Wastewater Treatment Facility, Dartmouth, MA
+
+Water Pollution Control Intern, May – August 2018
+
+Worked at a municipal treatment facility where waste was transported, separated, treated, and tested.
+Safely disposed of effluent and turned sludge into a marketable product used as a revenue stream for the plant
+Established familiarity with many wastewater management procedures, such as co-settling and thickening
+Independently overcame unforeseen challenges and furthered problem-solving skills
+MIKEL, Inc. (Defense Contractor for the U.S. Navy), Middletown, RI
+
+Summer Intern, May – August 2017
+
+Programmed a field programmable gate array (FPGA) using Verilog, a hardware description language, to be used in a prototype combat system
+                    Installed Naval test-reconstruction software onto different Linux systems</p>
+                
+                <h3>Mikel, Inc</h3> <h4>Summer Internship</h4>
+					<h5>May 2016 - August 2016</h5>
+						<p>Through this job I began the process to obtain a "Secret" level security clearance, which will soon allow me to work on classified government projects.</p>
+                        <p>Working at MIKEL full time, I Learned the basics of Verilog Hardware Description Language using Field Programmable Gate Arrays (FPGAs) to be used in submarine combat system simulation units. Also, I worked on the installation of Naval test reconstruction software on Linux systems.</p>
+						<hr>	
+				<h3>Bittersweet Farms, Resteraunt and Tavern</h3> <h4>Dishwasher and Event Aid</h4>
+					<h5>May 2015 - August 2015</h5>
+						<p>Working as a dishwasher at a local restaurant, I gained a strong work ethic and learned that hard work pays off as I was given other tasks in the kitchen, such as plating dishes for weddings.</p>
+						<hr>
+				<h3>Naval Undersea Warfare Center</h3> <h4>Intern</h4>
+					<h5>August 2014</h5>
+						<p>I worked on a team with other interns alongside professional engineers and scientist to design, build and test an unmanned underwater vehicle (UUV) that completed specific tasks in a testing pool. From this experienced I learned teamwork and leadership skills, as well as how to manage a budget and schedule.</p>
+            </div><!--end "work-experiences"-->
+        </section><!--end "work"-->
+    
+</div><!--end "main row-->
+
+<script src="control.js"></script>
+
+</body>
+</html>

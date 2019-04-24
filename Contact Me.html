@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jacob Oliveira</title>
+	<link rel="shortcut icon" href="favicon-32x32.ico"/>
+	<link href="style.css" rel="stylesheet">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+        // Prevent default anchor click behavior
+            event.preventDefault();
+
+        // Store hash
+            var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+
+<body>
+	
+<div class="row">
+    <header class="col-12">
+        <div id="spacer" class="col-1"></div>
+        <div id="headcontent" class="col-10">
+            <a class="col-6" href="#home"><h1>JACOB</h1> <h1>OLIVEIRA</h1></a>
+            <img src="Photos/osuengineering.PNG" class="col-4">
+        </div>
+        <div id="spacer" class="col-1"></div>
+    </header>
+</div>
+  
+<div class="row">
+        <section id="contact" class=" main-section col-12">
+            <div class ="title">
+                <ul>
+                    <li><a href="./index.html"> About</a></li> <li> |</li>
+                    <li><a href="./Academic%20Qualifications.html"> Academics</a></li> <li> |</li>
+                    <li><a href="./Internship%20Experience.html"> Internships</a></li> <li> |</li>
+                    <li><a href="./Projects.html"> Projects</a></li> <li> |</li>
+                    <li><a href="./Activities%20and%20Work.html"> Activities and Work</a></li> <li> |</li>
+                    <li><a href="./Contact%20Me.html" id="active"> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div id="contact-info" class="col-5">	
+                    
+                <p>Please feel free to contact me through any of the means below or with the form to the right.<br> Thank you!</p>
+                <div class="contact-list">
+                    <p><a href="oliveira.31@buckeyemail.osu.edu"><i class="fa fa-envelope"></i>oliveira.31@osu.edu</a></p>
+                    <p><a href="jacobroliveira@gmail.com"><i class="fa fa-envelope"></i>jacobroliveira@gmail.com</a></p>
+                    <p><a href="https://goo.gl/7MnKcT"><i class="fa fa-linkedin"></i>LinkedIn</a></p>
+                    <p><a href="https://jacoboliveira.com"><i class="fa fa-globe"></i>jacoboliveira.com</a></p>
+                    <p><a href="#"><i class="fa fa-phone"></i>(508) 558-0989</a></p>
+                </div><!--end "contact-list"-->
+            </div><!--end "contact-info"-->
+			
+            <div id="contact-form" class="col-7">
+                <form>
+                    <label>Name</label>
+                        <input name="name" placeholder="Your Name" required oninvalid="this.setCustomValidity('Woops! You missed a spot.')" oninput="setCustomValidity('')">
+                    <label>Email</label>
+				        <input name="email" type="email" placeholder="Your Email" required oninvalid="this.setCustomValidity('Woops! You missed a spot.')" oninput="setCustomValidity('')">
+				    <label>Message</label>
+						<textarea name="message" placeholder="Your Message" required oninvalid="this.setCustomValidity('Please leave me a message!')" oninput="setCustomValidity('')"></textarea>
+                    <br>
+				    <button id="submitbtn"><input id="submit" name="submit" value="Submit"></button>
+                    <!-- type="submit" --><!--Add this into the above input and remove the button wrapper to make the form work -->
+				</form>
+            </div><!--end "contact-form-->
+            
+            <div id="sorry-message" class="sorry-message">
+                <div id="sorry-message-content" class="sorry-message-content">
+                    <span class="close">&times;</span>
+                    <p>Sorry! This form doesn't quite work yet, but I'd love to hear from you! Please send and email to <strong>oliveira.31@osu.edu</strong> or any of the other contact methods listed on this site. Thanks!</p>
+                </div>
+            </div>
+            
+        </section><!--end "contact-container everyother_2"-->
+    
+</div><!--end "main row-->
+
+<script src="control.js"></script>
+
+</body>
+</html>

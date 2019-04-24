@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jacob Oliveira</title>
+	<link rel="shortcut icon" href="favicon-32x32.ico"/>
+	<link href="style.css" rel="stylesheet">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+        // Prevent default anchor click behavior
+            event.preventDefault();
+
+        // Store hash
+            var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+
+<body>
+	
+<div class="row">
+    <header class="col-12">
+        <div id="spacer" class="col-1"></div>
+        <div id="headcontent" class="col-10">
+            <a class="col-6" href="#home"><h1>JACOB</h1> <h1>OLIVEIRA</h1></a>
+            <img src="Photos/osuengineering.PNG" class="col-4">
+        </div>
+        <div id="spacer" class="col-1"></div>
+    </header>
+</div>
+   
+<div class="row">
+    <section id="about" class="main-section col-12">
+            <div class="title">
+                <ul>
+                    <li><a href="./index.html"> About</a></li> <li> |</li>
+                    <li><a href="./Academic%20Qualifications.html" id="active"> Academics</a></li> <li> |</li>
+                    <li><a href="./Internship%20Experience.html"> Internships</a></li> <li> |</li>
+                    <li><a href="./Projects.html"> Projects</a></li> <li> |</li>
+                    <li><a href="./Activities%20and%20Work.html"> Activities and Work</a></li> <li> |</li>
+                    <li><a href="./Contact%20Me.html"> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div id="about-content" class="words">
+                <h2>EDUCATION</h2>
+
+                <h3>The Ohio State University, Columbus, OH</h3>
+
+                <h4>B.S. Food, Agricultural, and Biological Engineering | Biomedical Engineering Minor <br>
+                Expected Graduation: May 2020</h4>
+
+                <p>As a Biological Engineer at Ohio State, I am learning how to apply engineering principles and the problem-solving mindset to living systems and integrate knowledge from the sciences such as biology, molecular genetics, biochemistry, and ecology. An example of this work from my bio-systems class would be learning about the fermentation process that yeast undergoes, and then looking at it as a heat transfer problem to find the work necessary to keep a batch reactor at a certain necessary to brew beer in a large production facility.</p>
+
+                <p>Moving on, I hope that I will be able to use what I have gained from my time at OSU to become a productive member of an engineering team working in the environmental / waste mitigation fields. This area is interesting to me because I am passionate about the earth and hope to do work to make it a cleaner place.</p>
+
+                <p>To learn more about how engineering has made an impact on my life, and how I plan on continuing to grow and learn past college please read more in my essays here (Engineering Impacts) and here (Lifelong Learning).</p>
+
+                <h3>Dartmouth High School, Dartmouth, MA</h3>
+
+                <h4>GPA: 3.7 | National Honor Society</h4>
+
+
+                <h2>SKILLS AND QUALIFICATIONS</h2>
+
+                <p>Technical Knowledge: MATLAB, SolidWorks, COMSOL Modeling, Microsoft Office, Google Suite, Technical Writing</p>
+
+                <p>Relevant Coursework: Fluid Mechanics, Organic Chemistry, Thermodynamics, Statics and Mechanics of Materials, Material Science, Energy in Biological Systems, Engineering Economics</p>
+            </div><!--end "about-words"-->
+            
+            <div id="snapshot-container">
+                <div class="profile-container everyother_2">
+                    <div class="profile-title">
+                        <h3>Snapshot</h3>
+                            <p>I'm a firm believer that everyone you meet knows something you don't.
+                            <br>I also think the greatest thing we can do with our lives is learn as much as possible.</p>
+                    </div><!--end "profile-title"-->
+
+                    <div class="profile-photo">
+                        <img src="Photos/DSC_0660_1.jpg" alt="A photo of me">
+                    </div><!--end "profile-photo"-->
+
+                    <div class="profile-info">
+                        <p class="profile_title">Name:</p> <p class="profile_info">Jacob Oliveira</p>
+                        <p class="profile_title">Started Breathing:</p> <p class="profile_info">19 years ago</p>
+					   <p class="profile_title">Location:</p> <p class="profile_info">Massachusets/Ohio, United States, Earth</p>
+				    </div><!--end "profile"-->
+                </div><!--end "profile-container"-->
+            </div><!--end "everyother_1"-->
+        
+        </section><!--end "about"-->
+    
+</div><!--end "main row-->
+
+<script src="control.js"></script>
+
+</body>
+</html>
